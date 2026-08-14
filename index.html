@@ -188,6 +188,20 @@ footer .credit{font-size:.78rem;letter-spacing:.05em;color:#8a8474}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ---------- PHOTO ADD-ONS ---------- */
+.hero-photos{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--steel-dark)}
+.hero-photos img{width:100%;height:220px;object-fit:cover;filter:saturate(1.05) contrast(1.03)}
+@media(min-width:820px){.hero-photos img{height:320px}}
+.about-photo{margin-bottom:1.5rem;border:1px solid var(--line);box-shadow:6px 6px 0 rgba(38,36,31,.12)}
+.about-photo img{width:100%;height:260px;object-fit:cover}
+.svc-gallery{display:grid;grid-template-columns:1fr;gap:1px;margin-top:2.5rem;background:rgba(245,241,231,.15)}
+@media(min-width:700px){.svc-gallery{grid-template-columns:1fr 1fr 1fr}}
+.svc-gallery figure{margin:0;position:relative;overflow:hidden}
+.svc-gallery img{width:100%;height:230px;object-fit:cover;display:block;filter:grayscale(.05) contrast(1.05);transition:.35s}
+.svc-gallery img:hover{transform:scale(1.04)}
+.svc-gallery figcaption{position:absolute;left:0;bottom:0;right:0;padding:.5rem .75rem;background:linear-gradient(0deg,rgba(0,0,0,.65),transparent);color:var(--sand);font-family:'Big Shoulders',sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:.85rem}
+.area-photo{width:100%;height:280px;object-fit:cover;border:1.5px solid var(--ink)}
 </style>
 </head>
 <body>
@@ -235,6 +249,10 @@ footer .credit{font-size:.78rem;letter-spacing:.05em;color:#8a8474}
         </ul>
       </div>
     </div>
+    <div class="hero-photos" aria-hidden="false">
+      <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Contractor framing a roof on a job site">
+      <img src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Two brothers reviewing plans on a construction site">
+    </div>
     <div class="ridge">
       <h1>Two names on the truck.<br><em>Two names on the work.</em></h1>
       <p class="tag">Family-run general contractor in West Frankfort, Illinois. No franchise, no out-of-town crew, no runaround — just two brothers who answer for every job with their own name.</p>
@@ -251,6 +269,9 @@ footer .credit{font-size:.78rem;letter-spacing:.05em;color:#8a8474}
       <div class="reveal">
         <span class="kicker">Straight Talk</span>
         <h2 class="sec">We'd rather earn your trust than claim it.</h2>
+        <figure class="about-photo">
+          <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Brothers working together on a home renovation project">
+        </figure>
         <p>Here's the honest truth: we're a small, working crew, not a marketing operation. We haven't spent years collecting online reviews — we've spent them on rooftops and in crawl spaces around Franklin County. This is our first real website, and we built it for one reason: so you can find us, see what we do, and get us out to your place.</p>
         <p>What we can put on the line is this — we're from here, we live here, and we'll still be here after the job's done. If something isn't right, you're not calling a call center in another state. You're calling one of us, and one of us shows up.</p>
         <p>Want proof before you hire us? Ask. We're glad to point you to jobs we've finished and people you can talk to before you sign anything.</p>
@@ -281,6 +302,20 @@ footer .credit{font-size:.78rem;letter-spacing:.05em;color:#8a8474}
         <li class="reveal"><div class="svc-row"><span class="svc-num">/05</span><h3>Concrete &amp; Foundations</h3><p>Slabs, driveways, sidewalks, footings, and foundation repair. Flat, square, and cured before we call it finished.</p></div></li>
         <li class="reveal"><div class="svc-row"><span class="svc-num">/06</span><h3>Small Commercial Builds</h3><p>Shops, storefronts, and outbuildings for local businesses that want the same handshake treatment as our homeowners.</p></div></li>
       </ul>
+      <div class="svc-gallery reveal" aria-label="Recent job photos">
+        <figure>
+          <img src="https://images.unsplash.com/photo-1652303518379-c0ef1c9fb2b1?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Fresh concrete slab being poured and finished">
+          <figcaption>Concrete &amp; Foundations</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Roofing crew installing new shingles on a house">
+          <figcaption>Roofing &amp; Siding</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Remodeled kitchen interior with new finishes">
+          <figcaption>Remodels &amp; Renovations</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -307,8 +342,6 @@ footer .credit{font-size:.78rem;letter-spacing:.05em;color:#8a8474}
         <span class="kicker">Where We Work</span>
         <h2 class="sec">West Frankfort &amp; the rest of Franklin County</h2>
         <p>We're based on North Ida Street in West Frankfort, and most of our work is within a short drive of the shop. If you're anywhere in Franklin County or the neighboring towns, odds are we've already got a job near you.</p>
-      </div>
-      <div class="reveal">
         <div class="towns" aria-label="Towns we serve">
           <span class="home">West Frankfort</span>
           <span>Benton</span>
@@ -321,6 +354,9 @@ footer .credit{font-size:.78rem;letter-spacing:.05em;color:#8a8474}
           <span>Marion</span>
           <span>+ nearby southern Illinois</span>
         </div>
+      </div>
+      <div class="reveal">
+        <img class="area-photo" src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Construction crew working on a residential job site in southern Illinois">
       </div>
     </div>
   </section>
