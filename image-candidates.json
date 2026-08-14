@@ -1,0 +1,29 @@
+{
+  "candidates": [
+    {
+      "url": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Seven construction workers standing together on a job site"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1587582423116-ec07293f0395?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Construction worker in hard hat on building frame"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Contractor in safety vest and helmet holding power tool"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1652303518379-c0ef1c9fb2b1?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Contractor crew in safety vests standing in front of construction vehicle"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Building under construction with gray concrete framing"
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?fm=jpg&q=60&w=3000&auto=format&fit=crop",
+      "alt": "Contractors working on a building during daytime"
+    }
+  ],
+  "source": "ai_search"
+}
